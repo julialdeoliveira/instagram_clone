@@ -69,7 +69,7 @@ class HomePage extends StatelessWidget {
               ),
               Padding(
                 padding:
-                    const EdgeInsets.symmetric(horizontal: 5, vertical: 25),
+                    const EdgeInsets.symmetric(horizontal: 5, vertical: 10),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -81,7 +81,7 @@ class HomePage extends StatelessWidget {
                             'https://upload.wikimedia.org/wikipedia/pt/thumb/3/3d/Coldplay-A-Head-Full-of-Dreams-2015.jpg/220px-Coldplay-A-Head-Full-of-Dreams-2015.jpg',
                           ),
                         ),
-                        SizedBox(width: 10,),
+                        SizedBox(width: 10),
                         Text(
                           'karstenblumenau',
                           style: TextStyle(color: Colors.white),
@@ -95,6 +95,33 @@ class HomePage extends StatelessWidget {
                   ],
                 ),
               ),
+              SizedBox(
+                height: 400,
+                child: Image.asset(
+                  'assets/images/image.jpg',
+                  fit: BoxFit.cover,
+                ),
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Row(
+                    children: const[
+                      Icon(Icons.abc_sharp, color: Colors.white,),
+                      Icon(Icons.abc_sharp, color: Colors.white,),
+                      Icon(Icons.abc_sharp, color: Colors.white,),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      Icon(Icons.abc_outlined,color: Colors.white,),
+                    ],
+                  ),
+                  Row(children: [
+                    Icon(Icons.abc_outlined, color: Colors.white,)
+                  ],),
+                ],
+              ),
             ],
           ),
         ),
@@ -102,3 +129,4 @@ class HomePage extends StatelessWidget {
     );
   }
 }
+

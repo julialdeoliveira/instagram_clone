@@ -7,7 +7,7 @@ import 'home_page/home.dart';
 
 void main() {
   runApp(const MaterialApp(
-    title: 'AppTreino',
+    title: 'Clone',
     home: HomePage(),
     debugShowCheckedModeBanner: false,
   ));

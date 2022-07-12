@@ -106,19 +106,20 @@ class HomePage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: const[
-                      Icon(Icons.abc_sharp, color: Colors.white,),
-                      Icon(Icons.abc_sharp, color: Colors.white,),
-                      Icon(Icons.abc_sharp, color: Colors.white,),
+                      Icon(Icons.favorite_border, color: Colors.white,),
+                      Icon(Icons.chat_bubble, color: Colors.white,),
+                      Icon(Icons.send, color: Colors.white,),
                     ],
                   ),
                   Row(
-                    children: [
-                      Icon(Icons.abc_outlined,color: Colors.white,),
+                    children: const[
+                      Icon(Icons.more_horiz,color: Colors.white,),
                     ],
                   ),
-                  Row(children: [
-                    Icon(Icons.abc_outlined, color: Colors.white,)
+                  Row(children: const [
+                    Icon(Icons.bookmark_border, color: Colors.white,)
                   ],),
                 ],
               ),
